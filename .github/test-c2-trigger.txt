@@ -1,0 +1,1 @@
+This file intentionally modifies .github/ to demonstrate the C2 blocking rule.
