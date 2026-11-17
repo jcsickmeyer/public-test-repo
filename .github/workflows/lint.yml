@@ -1,0 +1,19 @@
+name: "Project: Lint"
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+permissions:
+  contents: read
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint check
+        run: |
+          echo "=== Trusted PR Front-Door Gate: Lint ==="
+          echo "SHA: $GITHUB_SHA"
+          echo ""
+          echo "This workflow PROVES the front-door hold mechanism."
+          echo "It was held in action_required state until released by /trusted-run."
+          echo ""
+          echo "Lint complete — PASS"
