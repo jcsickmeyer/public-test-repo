@@ -6,3 +6,4 @@ outside collaborators. No workflow executes until a maintainer explicitly
 trusts this revision via /trusted-run.
 
 Date: 2026-11-17
+SHA B: This second commit proves prior approval does NOT carry over.
