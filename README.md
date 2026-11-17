@@ -1,3 +1,3 @@
 # public-test-repo
 
-F2 happy-path test commit — 2026-11-17T23:26:22Z
+SHA B — M1 negative test commit — 2026-11-17T23:30:07Z
