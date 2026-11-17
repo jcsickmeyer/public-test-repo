@@ -1,0 +1,23 @@
+name: "Project: Preflight"
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+permissions:
+  contents: read
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Preflight check
+        run: |
+          echo "=== Trusted PR Front-Door Gate: Preflight ==="
+          echo "Event:  $GITHUB_EVENT_NAME"
+          echo "SHA:    $GITHUB_SHA"
+          echo "Actor:  $GITHUB_ACTOR"
+          echo "Ref:    $GITHUB_REF"
+          echo ""
+          echo "This workflow PROVES the front-door hold mechanism."
+          echo "It was held in action_required state until a maintainer"
+          echo "ran /trusted-run to release it."
+          echo ""
+          echo "Preflight complete — PASS"
