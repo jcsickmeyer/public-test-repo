@@ -1,3 +1,3 @@
 # public-test-repo
 
-SHA B — M1 negative test commit — 2026-11-17T23:30:07Z
+SHA C — SHA-RESET advance commit — 2026-11-17T23:33:44Z
