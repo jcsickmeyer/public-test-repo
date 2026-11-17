@@ -1,0 +1,8 @@
+This file was added by an external contributor (jcsickmeyer) to demonstrate
+the Trusted PR front-door gate mechanism.
+
+SHA binding: GitHub natively holds ALL repository workflows for fork PRs from
+outside collaborators. No workflow executes until a maintainer explicitly
+trusts this revision via /trusted-run.
+
+Date: 2026-11-17
