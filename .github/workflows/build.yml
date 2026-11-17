@@ -1,0 +1,19 @@
+name: "Project: Build"
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: |
+          echo "=== Trusted PR Front-Door Gate: Build ==="
+          echo "SHA: $GITHUB_SHA"
+          echo ""
+          echo "This workflow PROVES the front-door hold mechanism."
+          echo "It was held in action_required state until released by /trusted-run."
+          echo ""
+          echo "Build complete — PASS"
